@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- metadata goes in head -->
+
+	<title>Form</title>
+</head>
+<body>
+<!-- content goes in the body -->
+	<h1>Register</h1>
+
+	<form>
+		<div>
+			<label for="firstName">First Name: </label>
+			<input id="firstName" name="firstName" type="text" required />
+
+			<label for="lastName">Last Name: </label>
+			<input id="lastName" name="lastName" type="text" required />
+		</div>
+
+		<div>
+			<label for="genderMale">Male</label>
+			<input id="genderMale" type="radio" name="gender" value="male"></input>
+			<label for="genderFemale">Female</label>
+			<input id="genderFemale" type="radio" name="gender" value="female"></input>
+			<label for="genderOther">Other</label>
+			<input id="genderOther" type="radio" name="gender" value="other"></input>
+		</div>
+
+		<div>
+			<label for="email">Email: </label>
+			<input id="email" name="email" type="text" required />
+
+			<label for="password">Password: </label>
+			<input id="password" name="password" type="password" minlength="5" maxlength="10" required />
+		</div>
+
+		<div>
+			<label for="birthday">Birthday: </label>
+			<input id="birthday" name="datetime" type="date" required />
+		</div>
+
+		<div>
+			<label for="agreement">I agree to the terms and coonditions</label>
+			<input id="agreement" name="agreement" type="checkbox" required />
+		</div>
+
+		<div>
+			<button type="submit">Submit</button>
+		</div>
+	</form>
+</body>
+</html>
