@@ -1,0 +1,17 @@
+<%- include("../partials/header") %>
+
+<h1>This is the show template</h1>
+
+<h5 class=""><%= campground.name %></h5>
+<img class="" src="<%= campground.image %>" />
+<p><%= campground.description %></p>
+
+<p>
+  <a class="btn btn-success" href="/campgrounds/<%= campground._id %>/comments/new">Create New Comment</a>
+</p>
+
+<% campground.comments.forEach(comment => { %>
+  <p><strong><%= comment.author %></strong> - <%= comment.text %></p>
+<% }) %>
+
+<%- include("../partials/footer") %>
